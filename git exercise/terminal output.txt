@@ -1,0 +1,271 @@
+Last login: Wed Sep 29 10:35:26 on ttys000
+WK@CarviS-on-Mac ~ % cd Desktop   
+WK@CarviS-on-Mac Desktop % ls
+$RECYCLE.BIN
+750ml
+APP
+BitComet
+CS371
+CS389
+CS389_AndroidStudioProjects
+CS488
+ClashX Pro
+DeepL
+Eclipse
+Guidelines for physics  lab reports_2015.pdf
+InsomniaX
+Microsoft Excel
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Word
+Movist
+PHY 111
+Parallels Desktop
+QQ
+ShareWithPC
+Sublime Text
+Thumbs.db
+VMware Fusion
+VirtualBox
+Visual Studio Code.app
+Wang, Kai BS CS 4-28-2021 Worksheet2019.pdf
+android-studio-2020.3.1.24-mac.dmg
+desktop.ini
+pace
+东西
+中苏关系内幕纪实：中苏关系三十五年.txt
+便笺
+微信
+截屏2021-09-27 下午8.14.17.png
+截屏2021-09-27 下午9.33.56 (2).png
+截屏2021-09-27 下午9.33.56.png
+截屏2021-09-29 上午10.32.46.png
+截屏2021-09-29 上午10.33.03.png
+截屏2021-09-29 上午10.33.17.png
+截屏2021-09-29 上午10.33.31.png
+柏林苍穹下
+琐杂
+百度网盘
+签证
+计算机专业英语词汇大全(完美打印版).pdf
+迁移的项目.nosync
+迅雷
+邮件
+WK@CarviS-on-Mac Desktop % mkdir SampleApp
+WK@CarviS-on-Mac Desktop % cd SampleApp 
+WK@CarviS-on-Mac SampleApp % git init
+Initialized empty Git repository in /Users/WK/Desktop/SampleApp/.git/
+WK@CarviS-on-Mac SampleApp % touch file1.txt
+WK@CarviS-on-Mac SampleApp % touch file2.txt
+WK@CarviS-on-Mac SampleApp % cs ..
+zsh: command not found: cs
+WK@CarviS-on-Mac SampleApp % cd ..
+WK@CarviS-on-Mac Desktop % git add SampleApp 
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac Desktop % git status
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac Desktop % ls  
+$RECYCLE.BIN
+750ml
+APP
+BitComet
+CS371
+CS389
+CS389_AndroidStudioProjects
+CS488
+ClashX Pro
+DeepL
+Eclipse
+Guidelines for physics  lab reports_2015.pdf
+InsomniaX
+Microsoft Excel
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Word
+Movist
+PHY 111
+Parallels Desktop
+QQ
+SampleApp
+ShareWithPC
+Sublime Text
+Thumbs.db
+VMware Fusion
+VirtualBox
+Visual Studio Code.app
+Wang, Kai BS CS 4-28-2021 Worksheet2019.pdf
+android-studio-2020.3.1.24-mac.dmg
+desktop.ini
+pace
+东西
+中苏关系内幕纪实：中苏关系三十五年.txt
+便笺
+微信
+截屏2021-09-27 下午8.14.17.png
+截屏2021-09-27 下午9.33.56 (2).png
+截屏2021-09-27 下午9.33.56.png
+截屏2021-09-29 上午10.32.46.png
+截屏2021-09-29 上午10.33.03.png
+截屏2021-09-29 上午10.33.17.png
+截屏2021-09-29 上午10.33.31.png
+柏林苍穹下
+琐杂
+百度网盘
+签证
+计算机专业英语词汇大全(完美打印版).pdf
+迁移的项目.nosync
+迅雷
+邮件
+WK@CarviS-on-Mac Desktop % cd SampleApp 
+WK@CarviS-on-Mac SampleApp % cd ..     
+WK@CarviS-on-Mac Desktop % ls
+$RECYCLE.BIN
+750ml
+APP
+BitComet
+CS371
+CS389
+CS389_AndroidStudioProjects
+CS488
+ClashX Pro
+DeepL
+Eclipse
+Guidelines for physics  lab reports_2015.pdf
+InsomniaX
+Microsoft Excel
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Word
+Movist
+PHY 111
+Parallels Desktop
+QQ
+SampleApp
+ShareWithPC
+Sublime Text
+Thumbs.db
+VMware Fusion
+VirtualBox
+Visual Studio Code.app
+Wang, Kai BS CS 4-28-2021 Worksheet2019.pdf
+android-studio-2020.3.1.24-mac.dmg
+desktop.ini
+pace
+东西
+中苏关系内幕纪实：中苏关系三十五年.txt
+便笺
+微信
+截屏2021-09-27 下午8.14.17.png
+截屏2021-09-27 下午9.33.56 (2).png
+截屏2021-09-27 下午9.33.56.png
+截屏2021-09-29 上午10.32.46.png
+截屏2021-09-29 上午10.33.03.png
+截屏2021-09-29 上午10.33.17.png
+截屏2021-09-29 上午10.33.31.png
+柏林苍穹下
+琐杂
+百度网盘
+签证
+计算机专业英语词汇大全(完美打印版).pdf
+迁移的项目.nosync
+迅雷
+邮件
+WK@CarviS-on-Mac Desktop % git add SampleApp 
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac Desktop % cd SampleApp 
+WK@CarviS-on-Mac SampleApp % ls
+file1.txt	file2.txt
+WK@CarviS-on-Mac SampleApp % git init
+Reinitialized existing Git repository in /Users/WK/Desktop/SampleApp/.git/
+WK@CarviS-on-Mac SampleApp % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	file1.txt
+	file2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+WK@CarviS-on-Mac SampleApp % git add file1.txt 
+WK@CarviS-on-Mac SampleApp % git add file1.txt 
+WK@CarviS-on-Mac SampleApp % git add file2.txt 
+WK@CarviS-on-Mac SampleApp % git commit file1.txt -m "New xxxx" 
+[master (root-commit) 7ae81cc] New xxxx
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+WK@CarviS-on-Mac SampleApp % git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+WK@CarviS-on-Mac SampleApp % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   file2.txt
+
+WK@CarviS-on-Mac SampleApp % git commit -m "New new"
+[master 12671f0] New new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.txt
+WK@CarviS-on-Mac SampleApp % git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+WK@CarviS-on-Mac SampleApp % git push SampleApp master
+fatal: 'SampleApp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+WK@CarviS-on-Mac SampleApp % git diff file2.txt 
+WK@CarviS-on-Mac SampleApp % git diff -cached file2.txt 
+error: invalid option: -cached
+WK@CarviS-on-Mac SampleApp % git status      
+On branch master
+nothing to commit, working tree clean
+WK@CarviS-on-Mac SampleApp % git log
+commit 12671f0ea562f828ef17b6fbf526463065514e9b (HEAD -> master)
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Wed Sep 29 10:49:14 2021 -0400
+
+    New new
+
+commit 7ae81cc8a9434716218bc72074772d78404414aa
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Wed Sep 29 10:48:07 2021 -0400
+
+    New xxxx
+WK@CarviS-on-Mac SampleApp % git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+WK@CarviS-on-Mac SampleApp % git push --set-upstream master master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+WK@CarviS-on-Mac SampleApp % git log
+commit 12671f0ea562f828ef17b6fbf526463065514e9b (HEAD -> master)
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Wed Sep 29 10:49:14 2021 -0400
+
+    New new
+
+commit 7ae81cc8a9434716218bc72074772d78404414aa
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Wed Sep 29 10:48:07 2021 -0400
+
+    New xxxx
+WK@CarviS-on-Mac SampleApp % 
