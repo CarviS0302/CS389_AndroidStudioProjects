@@ -1,1 +1,1 @@
-@Kai Wang: no screenshot, please check file "terminal output.txt" for process, thank you. 
+@Kai Wang: no screenshot, please check file "terminal_x.txt" for process, thank you. 

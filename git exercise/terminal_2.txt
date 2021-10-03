@@ -1,0 +1,218 @@
+Last login: Wed Sep 29 10:57:43 on ttys000
+WK@CarviS-on-Mac ~ % git config --global color.ui true
+WK@CarviS-on-Mac ~ % git log
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac ~ % git statue
+git: 'statue' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+WK@CarviS-on-Mac ~ % git status 
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac ~ % ls
+111111WindowsSupport		Music
+AndroidStudioProjects		Parallels
+Applications			Pictures
+Applications (Parallels)	Public
+Desktop				Virtual Machines.localized
+Documents			VirtualBox VMs
+Downloads			classes
+JAVA				eclipse-workspace
+Library				iCloud 云盘（归档）
+Movies				share
+WK@CarviS-on-Mac ~ % cd Desktop 
+WK@CarviS-on-Mac Desktop % ls
+$RECYCLE.BIN
+111-Lab2-Free-Fall.pdf
+750ml
+APP
+BitComet
+CS371
+CS389
+CS389_AndroidStudioProjects
+CS488
+ClashX Pro
+DeepL
+Eclipse
+Guidelines for physics  lab reports_2015.pdf
+InsomniaX
+Microsoft Excel
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Word
+Movist
+PHY 111
+Parallels Desktop
+QQ
+ShareWithPC
+Sublime Text
+Thumbs.db
+VMware Fusion
+VirtualBox
+Visual Studio Code.app
+Wang, Kai BS CS 4-28-2021 Worksheet2019.pdf
+android-studio-2020.3.1.24-mac.dmg
+desktop.ini
+pace
+sean
+~$ ASSIGNMENT 1 2.docx
+~$ GPS Ruining Our Brains?.docx
+~$ Outline.docx
+~$ draft.docx
+~$361_GroupProject 1.docx
+~$Futures Studies 2 Week 8.pptx
+~$anslation.docx
+~$cture 4.doc
+~$fference between cats and dogs(by Kay).docx
+~$oject 7 2.doc
+~$oject 7.doc
+~$roline.doc
+~$va Tutorial.doc
+~$y-王锴（Wang Kai）.docx
+~$文案工作1.docx
+~$沙滩”露营计划.docx
+~$英语作业2.docx
+东西
+中苏关系内幕纪实：中苏关系三十五年.txt
+便笺
+微信
+截屏2021-09-27 下午9.33.56 (2).png
+截屏2021-09-27 下午9.33.56.png
+截屏2021-09-30 下午3.27.32.png
+柏林苍穹下
+琐杂
+百度网盘
+签证
+计算机专业英语词汇大全(完美打印版).pdf
+迁移的项目.nosync
+迅雷
+邮件
+WK@CarviS-on-Mac Desktop % mkdir GitSample
+WK@CarviS-on-Mac Desktop % cd GitSample 
+WK@CarviS-on-Mac GitSample % ls
+WK@CarviS-on-Mac GitSample % git init
+Initialized empty Git repository in /Users/WK/Desktop/GitSample/.git/
+WK@CarviS-on-Mac GitSample % touch file.html
+WK@CarviS-on-Mac GitSample % touch otherfile.html
+WK@CarviS-on-Mac GitSample % git add .
+WK@CarviS-on-Mac GitSample % git log --online
+fatal: your current branch 'master' does not have any commits yet
+WK@CarviS-on-Mac GitSample % git commit -m "file.html"
+[master (root-commit) cdeb6f6] file.html
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.html
+ create mode 100644 otherfile.html
+WK@CarviS-on-Mac GitSample % git log --oneline 
+cdeb6f6 (HEAD -> master) file.html
+WK@CarviS-on-Mac GitSample % git status
+On branch master
+nothing to commit, working tree clean
+WK@CarviS-on-Mac GitSample % git add .
+WK@CarviS-on-Mac GitSample % git status
+On branch master
+nothing to commit, working tree clean
+WK@CarviS-on-Mac GitSample % git log 
+commit cdeb6f6bdda5455800c80c5fe517bff46c077762 (HEAD -> master)
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Fri Oct 1 12:25:34 2021 -0400
+
+    file.html
+WK@CarviS-on-Mac GitSample % git commit --amend -m "commit file.html"
+[master 9ee9b2f] commit file.html
+ Date: Fri Oct 1 12:25:34 2021 -0400
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.html
+ create mode 100644 otherfile.html
+WK@CarviS-on-Mac GitSample % git log --oneline
+9ee9b2f (HEAD -> master) commit file.html
+WK@CarviS-on-Mac GitSample % rm file.html 
+WK@CarviS-on-Mac GitSample % ls -al
+total 0
+drwxr-xr-x   4 WK  staff   128 Oct  1 12:31 .
+drwx------@ 79 WK  staff  2528 Oct  1 12:03 ..
+drwxr-xr-x  13 WK  staff   416 Oct  1 12:31 .git
+-rw-r--r--   1 WK  staff     0 Oct  1 12:21 otherfile.html
+WK@CarviS-on-Mac GitSample % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    file.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+WK@CarviS-on-Mac GitSample % git checkout file.html
+Updated 1 path from the index
+WK@CarviS-on-Mac GitSample % git status
+On branch master
+nothing to commit, working tree clean
+WK@CarviS-on-Mac GitSample % ls -al 
+total 0
+drwxr-xr-x   5 WK  staff   160 Oct  1 12:33 .
+drwx------@ 79 WK  staff  2528 Oct  1 12:03 ..
+drwxr-xr-x  13 WK  staff   416 Oct  1 12:33 .git
+-rw-r--r--   1 WK  staff     0 Oct  1 12:33 file.html
+-rw-r--r--   1 WK  staff     0 Oct  1 12:21 otherfile.html
+WK@CarviS-on-Mac GitSample % rm file.html 
+WK@CarviS-on-Mac GitSample % git add .
+WK@CarviS-on-Mac GitSample % git commit -m "remove file.html"
+[master e6b65bf] remove file.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file.html
+WK@CarviS-on-Mac GitSample % ls -al
+total 0
+drwxr-xr-x   4 WK  staff   128 Oct  1 12:33 .
+drwx------@ 79 WK  staff  2528 Oct  1 12:03 ..
+drwxr-xr-x  13 WK  staff   416 Oct  1 12:34 .git
+-rw-r--r--   1 WK  staff     0 Oct  1 12:21 otherfile.html
+WK@CarviS-on-Mac GitSample % git log --oneline
+e6b65bf (HEAD -> master) remove file.html
+9ee9b2f commit file.html
+WK@CarviS-on-Mac GitSample % git reset --hard e6b66bf
+fatal: ambiguous argument 'e6b66bf': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+WK@CarviS-on-Mac GitSample % git reset hard HEAD~e6b65bf
+fatal: ambiguous argument 'hard': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+WK@CarviS-on-Mac GitSample % git reset --hard HEAD~1
+HEAD is now at 9ee9b2f commit file.html
+WK@CarviS-on-Mac GitSample % ls -al
+total 0
+drwxr-xr-x   5 WK  staff   160 Oct  1 12:37 .
+drwx------@ 79 WK  staff  2528 Oct  1 12:03 ..
+drwxr-xr-x  14 WK  staff   448 Oct  1 12:37 .git
+-rw-r--r--   1 WK  staff     0 Oct  1 12:37 file.html
+-rw-r--r--   1 WK  staff     0 Oct  1 12:21 otherfile.html
+WK@CarviS-on-Mac GitSample % git log --oneline
+9ee9b2f (HEAD -> master) commit file.html
+WK@CarviS-on-Mac GitSample % remove file.html 
+zsh: command not found: remove
+WK@CarviS-on-Mac GitSample % git revert HEAD
+Removing otherfile.html
+Removing file.html
+hint: Waiting for your editor to close the file... 
+Revert "commit file.html"
+
+# Plesdfa dfa dfadsf safd safd ae enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       deleted:    file.html
+#       deleted:    otherfile.html
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --

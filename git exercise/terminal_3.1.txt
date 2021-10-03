@@ -1,0 +1,175 @@
+Last login: Fri Oct  1 12:42:39 on ttys001
+WK@CarviS-on-Mac ~ % git revert
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac ~ % git log
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac ~ % ls
+111111WindowsSupport		Music
+AndroidStudioProjects		Parallels
+Applications			Pictures
+Applications (Parallels)	Public
+Desktop				Virtual Machines.localized
+Documents			VirtualBox VMs
+Downloads			classes
+JAVA				eclipse-workspace
+Library				iCloud 云盘（归档）
+Movies				share
+WK@CarviS-on-Mac ~ % cd Desktop 
+WK@CarviS-on-Mac Desktop % cd GitSample 
+WK@CarviS-on-Mac GitSample % ls
+WK@CarviS-on-Mac GitSample % git log
+commit 9ee9b2f7ccaecc2f867464da735bf771bcfdd5f4 (HEAD -> master)
+Author: CarviS <kaywong0302@outlook.com>
+Date:   Fri Oct 1 12:25:34 2021 -0400
+
+    commit file.html
+WK@CarviS-on-Mac GitSample % git revert <9ee9b2f7ccaecc2f867464da735bf771bcfdd5f4>
+zsh: parse error near `\n'
+WK@CarviS-on-Mac GitSample % git revert <9ee9b2f>
+zsh: parse error near `\n'
+WK@CarviS-on-Mac GitSample % git revert <commit 9ee9b2f>
+zsh: parse error near `\n'
+WK@CarviS-on-Mac GitSample % ls 
+WK@CarviS-on-Mac GitSample % cd ..
+WK@CarviS-on-Mac Desktop % ls
+$RECYCLE.BIN
+111-Lab2-Free-Fall.pdf
+750ml
+APP
+BitComet
+CS371
+CS389
+CS389_AndroidStudioProjects
+CS488
+ClashX Pro
+DeepL
+Eclipse
+GitSample
+Guidelines for physics  lab reports_2015.pdf
+InsomniaX
+Microsoft Excel
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Word
+Movist
+PHY 111
+Parallels Desktop
+QQ
+ShareWithPC
+Sublime Text
+Thumbs.db
+VMware Fusion
+VirtualBox
+Visual Studio Code.app
+Wang, Kai BS CS 4-28-2021 Worksheet2019.pdf
+android-studio-2020.3.1.24-mac.dmg
+desktop.ini
+pace
+sean
+~$ ASSIGNMENT 1 2.docx
+~$ GPS Ruining Our Brains?.docx
+~$ Outline.docx
+~$ draft.docx
+~$361_GroupProject 1.docx
+~$Futures Studies 2 Week 8.pptx
+~$anslation.docx
+~$cture 4.doc
+~$fference between cats and dogs(by Kay).docx
+~$oject 7 2.doc
+~$oject 7.doc
+~$roline.doc
+~$va Tutorial.doc
+~$y-王锴（Wang Kai）.docx
+~$文案工作1.docx
+~$沙滩”露营计划.docx
+~$英语作业2.docx
+东西
+中苏关系内幕纪实：中苏关系三十五年.txt
+便笺
+微信
+截屏2021-09-27 下午9.33.56 (2).png
+截屏2021-09-27 下午9.33.56.png
+截屏2021-09-30 下午3.27.32.png
+柏林苍穹下
+琐杂
+百度网盘
+签证
+终端存储的输出.txt
+计算机专业英语词汇大全(完美打印版).pdf
+迁移的项目.nosync
+迅雷
+邮件
+WK@CarviS-on-Mac Desktop % mkdir CS389Local
+WK@CarviS-on-Mac Desktop % cd CS389Local 
+WK@CarviS-on-Mac CS389Local % ls
+WK@CarviS-on-Mac CS389Local % git clone https://github.com.yourpseudo/CS389Remote.git
+Cloning into 'CS389Remote'...
+fatal: unable to access 'https://github.com.yourpseudo/CS389Remote.git/': Could not resolve host: github.com.yourpseudo
+WK@CarviS-on-Mac CS389Local % git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+WK@CarviS-on-Mac CS389Local % git clone https://github.com/yourpseudo/CS389Remote.git
+Cloning into 'CS389Remote'...
+Username for 'https://github.com': CarviS0302   
+Password for 'https://CarviS0302@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/yourpseudo/CS389Remote.git/'
+WK@CarviS-on-Mac CS389Local % git log
+fatal: not a git repository (or any of the parent directories): .git
+WK@CarviS-on-Mac CS389Local % git clone https://github.com/yourpseudo/CS389Remote.git
+
+Cloning into 'CS389Remote'...
+Username for 'https://github.com': CarviS0302
+Password for 'https://CarviS0302@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/yourpseudo/CS389Remote.git/'
+WK@CarviS-on-Mac CS389Local % 
